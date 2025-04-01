@@ -1,0 +1,294 @@
+/* Variables */
+:root {
+    /* Colors */
+    --app-bg: #040a18;
+    --dark-blue: #11213a;
+    --yellow-color: #d8a31a;
+    --green-color: #007d55;
+    --red-color: #d30821;
+    --border-color: #717788;
+    /* Model */
+    --padding-y: 2.5rem;
+    /* Animation */
+    --transition: ease-out 150ms;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+input {
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+}
+
+button {
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    font-family: inherit;
+    background: transparent;
+}
+
+section {
+    padding: var(--padding-y) 0;
+}
+
+/* Global */
+html,
+body {
+    color: white;
+    background: var(--app-bg);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+}
+
+/* # Header # */
+header {
+    padding: var(--padding-y) 0;
+}
+
+header h1 {
+    font-weight: 500;
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--yellow-color);
+    font-family: "Pacifico", cursive;
+}
+
+/* # Add Bookmark Section # */
+section.add-bookmark .head-title {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--padding-y);
+}
+
+section.add-bookmark .head-title h2 {
+    font-size: 1rem;
+}
+
+@media (min-width: 376px) {
+    section.add-bookmark .head-title h2 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 576px) {
+    section.add-bookmark .head-title h2 {
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-width: 769px) {
+    section.add-bookmark .head-title h2 {
+        font-size: 1.8rem;
+    }
+}
+
+section.add-bookmark .head-title i {
+    font-size: 1.5rem;
+    color: var(--yellow-color);
+}
+
+section.add-bookmark form .input-group {
+    margin-bottom: 25px;
+}
+
+section.add-bookmark form label i {
+    margin-right: 5px;
+}
+
+section.add-bookmark form input {
+    width: 100%;
+
+    border: solid 2px #242e48;
+    padding: 10px;
+    color: var(--yellow-color);
+    margin-top: 10px;
+    border-radius: 4px;
+    background-color: var(--dark-blue);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+section.add-bookmark form input:focus {
+    border-color: var(--yellow-color);
+}
+
+section.add-bookmark form button[type="submit"] {
+    color: #000;
+    margin: 0 auto;
+    display: block;
+    font-weight: 600;
+    padding: 10px 25px;
+    border-radius: 4px;
+    background-color: var(--yellow-color);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+section.add-bookmark form button[type="submit"]:hover {
+    color: white;
+    background-color: #b68407;
+}
+
+/* # Table Data # */
+.table-data-container {
+    padding: var(--padding-y) 0;
+}
+
+.table-data-container table {
+    width: 100%;
+    overflow: hidden;
+    border-spacing: 0;
+}
+
+.table-data-container table thead {
+    background-color: #0d192d;
+}
+
+.table-data-container table tbody {
+    background-color: var(--dark-blue);
+}
+
+.table-data-container table thead th:first-of-type {
+    border-radius: 10px 0 0 0;
+    -webkit-border-radius: 10px 0 0 0;
+    -moz-border-radius: 10px 0 0 0;
+    -ms-border-radius: 10px 0 0 0;
+    -o-border-radius: 10px 0 0 0;
+}
+
+.table-data-container table thead th:last-of-type {
+    border-radius: 0 10px 0 0;
+    -webkit-border-radius: 0 10px 0 0;
+    -moz-border-radius: 0 10px 0 0;
+    -ms-border-radius: 0 10px 0 0;
+    -o-border-radius: 0 10px 0 0;
+}
+
+.table-data-container table tbody tr:last-of-type td:first-of-type {
+    border-radius: 0 0 0 10px;
+    -webkit-border-radius: 0 0 0 10px;
+    -moz-border-radius: 0 0 0 10px;
+    -ms-border-radius: 0 0 0 10px;
+    -o-border-radius: 0 0 0 10px;
+}
+
+.table-data-container table tbody tr:last-of-type td:last-of-type {
+    border-radius: 0 0 10px 0;
+    -webkit-border-radius: 0 0 10px 0;
+    -moz-border-radius: 0 0 10px 0;
+    -ms-border-radius: 0 0 10px 0;
+    -o-border-radius: 0 0 10px 0;
+}
+
+.table-data-container table tbody tr:hover {
+    background-color: #0d192d;
+}
+
+.table-data-container table th,
+.table-data-container table td {
+    padding: 25px 15px;
+}
+
+.table-data-container table th {
+    border-bottom: solid 1px var(--border-color);
+}
+
+.table-data-container table tbody td {
+    text-align: center;
+}
+
+.table-data-container table tbody td:nth-child(2) {
+    text-transform: capitalize;
+}
+
+.table-data-container table tbody td a,
+.table-data-container table tbody td button {
+    font-weight: 600;
+    padding: 10px 25px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.table-data-container table tbody td a.visit-btn {
+    background-color: var(--green-color);
+}
+
+.table-data-container table tbody td button.delete-btn {
+    background-color: var(--red-color);
+}
+
+/* # Shared Styles # */
+header,
+section.add-bookmark {
+    border-bottom: solid 1px var(--border-color);
+}
+
+section.add-bookmark form input,
+section.add-bookmark form button[type="submit"],
+.table-data-container table tbody td button,
+.table-data-container table tbody tr {
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}

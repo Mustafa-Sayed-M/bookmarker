@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Description -->
+    <meta name="description" content="A bookmark manager application">
+    <!-- Author -->
+    <meta name="author" content="Mustafa Sayed">
+    <!-- Title -->
+    <title>Bookmarker</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <!-- Index Css -->
+    <link rel="stylesheet" href="./index.css">
+    <!-- Font Awesome From Cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <!-- App -->
+    <section class="app">
+        <!-- Header -->
+        <header>
+            <div class="container">
+                <h1>Bookmarker</h1>
+            </div>
+        </header>
+        <!-- Main -->
+        <main>
+            <!-- Add Bookmark -->
+            <section class="add-bookmark" id="addBookmark">
+                <div class="container">
+                    <!-- Header Title -->
+                    <div class="head-title">
+                        <i class="fa-solid fa-bookmark fa-fw"></i>
+                        <h2>Bookmark your favorite sites</h2>
+                        <i class="fa-solid fa-bookmark fa-fw"></i>
+                    </div>
+                    <!-- Form -->
+                    <form>
+                        <!-- Site Name Input Group -->
+                        <div class="site-name-input-group input-group">
+                            <label for="siteName">
+                                <i class="fa-solid fa-book-bookmark fa-fw"></i>
+                                <span>Site Name</span>
+                            </label>
+                            <input type="text" placeholder="Bookmark Name" id="siteName" name="site_name" required
+                                autocomplete="on" minlength="3" maxlength="20">
+                        </div>
+                        <!-- Site Url Input Group -->
+                        <div class="site-url-input-group input-group">
+                            <label for="siteUrl">
+                                <i class="fa-solid fa-link fa-fw"></i>
+                                <span>Site Url</span>
+                            </label>
+                            <input type="test" placeholder="Website url" id="siteUrl" name="site_url" required
+                                autocomplete="on">
+                        </div>
+                        <!-- Submit Button -->
+                        <button type="submit" title="Submit" aria-label="Submit">Submit</button>
+                    </form>
+                </div>
+            </section>
+            <!-- Table Data Container -->
+            <div class="table-data-container">
+                <div class="container">
+                    <!-- Table of Data -->
+                    <table class="table-data">
+                        <thead>
+                            <tr>
+                                <th>Index</th>
+                                <th>Website Name</th>
+                                <th>Visit</th>
+                                <th>Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- <tr>
+                                <td>1</td>
+                                <td>Youtube</td>
+                                <td>
+                                    <a href="" class="visit-btn" title="Visit This Site" aria-label="Visit Site">
+                                        <i class="fa-solid fa-eye fa-fw"></i>
+                                        <span>Visit</span>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="" class="delete-btn" title="Delete This Site" aria-label="Delete Site">
+                                        <i class="fa-solid fa-trash fa-fw"></i>
+                                        <span>Delete</span>
+                                    </a>
+                                </td>
+                            </tr> -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+        </div>
+        <!-- Index Js -->
+        <script src="./index.js"></script>
+</body>
+
+</html>
