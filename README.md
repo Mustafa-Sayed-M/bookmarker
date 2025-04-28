@@ -2,7 +2,11 @@
 
 Bookmarker is a simple web application that allows users to save and manage their favorite website links. It provides an easy way to store bookmarks directly in the browser using **local storage**.
 
-## <a href='https://mustafa-sayed-m.github.io/bookmarker/'>Live Demo</a>
+## 📸 Preview
+
+<a href='https://mustafa-sayed-m.github.io/bookmarker/' target='_blank'>
+    <img src='./preview.png' alt='Preview Image' />
+</a>
 
 ## 🚀 Features
 - Add a website name and URL to save as a bookmark.
