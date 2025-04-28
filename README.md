@@ -8,6 +8,8 @@ Bookmarker is a simple web application that allows users to save and manage thei
     <img src='./preview.png' alt='Preview Image' />
 </a>
 
+`click on image to go live demo`
+
 ## 🚀 Features
 - Add a website name and URL to save as a bookmark.
 - View and manage saved bookmarks.
